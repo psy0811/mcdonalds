@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>mcdonald's</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2/xeicon.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="yellow-bg">
+        <a href="index.html"><i class="xi-close"></i></a>
+        <h1>장바구니</h1>
+    </header>
+
+    <aside>
+        <div>
+            <div class="aside-login">
+                <div class="d-flex">
+                    <a href="login.html">로그인</a>
+                    <a href="">회원가입</a>
+                </div>
+                <p>주문하시려면 로그인 해주세요.</p>
+            </div>
+            <ul class="aside-category">
+                <li>
+                    <a href="index.html">추천상품</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_burger.html">버거&세트</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_snack.html">스낵&사이드</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_dessert.html">디저트&음료</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_HappyMeal.html">해피밀</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="">이벤트</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="">고객센터</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+            </ul>
+            <div class="aside-link">
+                <a href="" class="btn">주문조회</a>
+                <a href="" class="btn">마이페이지</a>
+            </div>
+            <i class="xi-close-thin"></i>
+        </div>
+    </aside>
+
+    <main class="cart-contents Y-container-bt">
+        <form action="finish.html" class="cart-form">
+            <div class="all-check d-flex cart-pd container">
+                <p><input type="checkbox"></p>
+                <h2>전체선택</h2>
+            </div>
+            <hr>
+            <ul class="cart_list container">
+                <li class="d-flex cart-pd">
+                    <p><input type="checkbox"></p>
+                    <a href="detail.html" class="cart-img"><img src="images/1955burger.png" alt=""></a>
+                    <div>
+                        <div class="cart-info">
+                            <h3>1955 버거</h3>
+                            <p>옵션 선택: 단품</p>
+                            <h4 data-price="6400">0</h4>
+                        </div>
+                        <div class="quantity">
+                            <!-- <label for="qty">수량</label> -->
+                            <input type="number" name="qty" min="1" value="1">
+                        </div>
+                    </div>
+                    <i class="xi-close"></i>
+                </li>
+                <li class="d-flex cart-pd">
+                    <p><input type="checkbox"></p>
+                    <a href="detail.html"  class="cart-img"><img src="images/1955burger.png" alt=""></a>
+                    <div>
+                        <div class="cart-info">
+                            <h3>1955 버거</h3>
+                            <p>옵션 선택: 단품</p>
+                            <h4 data-price="5800">0</h4>
+                        </div>
+                        <div class="quantity">
+                            <!-- <label for="qty">수량</label> -->
+                            <input type="number" name="qty" min="1" value="1">
+                        </div>
+                    </div>
+                    <i class="xi-close"></i>
+                </li>
+                <li class="d-flex cart-pd">
+                    <p><input type="checkbox"></p>
+                    <a href="detail.html"  class="cart-img"><img src="images/1955burger.png" alt=""></a>
+                    <div>
+                        <div class="cart-info">
+                            <h3>1955 버거</h3>
+                            <p>옵션 선택: 단품</p>
+                            <h4 data-price="4900">0</h4>
+                        </div>
+                        <div class="quantity">
+                            <!-- <label for="qty">수량</label> -->
+                            <input type="number" name="qty" min="1" value="1">
+                        </div>
+                    </div>
+                    <i class="xi-close"></i>
+                </li>
+            </ul>
+            <hr>
+            <div class="payment container">
+                <div class="cart-pd amount">
+                    <div class="d-flex jc-between">
+                        <h5>상품금액</h5>
+                        <h6 class="product-amt">0</h6>
+                    </div>
+                    <div class="d-flex jc-between">
+                        <h5>배달비</h5>
+                        <h6 class="delivery-fee" data-price="3000">0</h6>
+                    </div>
+                </div>
+                <div class="d-flex jc-between cart-pd">
+                    <h5>결제예정금액</h5>
+                    <h6 class="total-price">0</h6>
+                </div>
+            </div>
+            <p class="container"><button type="submit" class="btn">결제하기</button></p>
+        </form>
+    </main>
+
+    <footer class="container">
+        <div>
+            <a href="index.html"><i class="xi-home"></i></a>          
+            <p><a href="">홈</a></p>
+        </div>
+        <div class="menu-btn">
+            <a href=""><i class="xi-bars"></i></a>
+            <p><a href="">메뉴</a></p>
+        </div>
+        <div>
+            <a href=""><i class="xi-bicycle"></i></a>
+            <p><a href="">주문조회</a></p>
+        </div>
+        <div>
+            <a href=""><i class="xi-user-o"></i></a>
+            <p><a href="">마이페이지</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

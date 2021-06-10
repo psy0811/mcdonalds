@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>mcdonald's</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2/xeicon.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="yellow-bg detail-header">
+        <i class="xi-angle-left backward"></i>
+        <h1>1955버거</h1>
+        <a href="cart.html" class="cart-amt" data-cart="3"><i class="xi-cart-o cart-amt"></i></a>
+    </header>
+
+    <aside>
+        <div>
+            <div class="aside-login">
+                <div class="d-flex">
+                    <a href="login.html">로그인</a>
+                    <a href="">회원가입</a>
+                </div>
+                <p>주문하시려면 로그인 해주세요.</p>
+            </div>
+            <ul class="aside-category">
+                <li>
+                    <a href="index.html">추천상품</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_burger.html">버거&세트</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_snack.html">스낵&사이드</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_dessert.html">디저트&음료</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="list_HappyMeal.html">해피밀</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="">이벤트</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+                <li>
+                    <a href="">고객센터</a>
+                    <i class="xi-angle-right"></i>
+                </li>
+            </ul>
+            <div class="aside-link">
+                <a href="" class="btn">주문조회</a>
+                <a href="" class="btn">마이페이지</a>
+            </div>
+            <i class="xi-close-thin"></i>
+        </div>
+    </aside>
+
+    <main class="detail Y-container-bt">
+        <section class="container">
+            <img src="images/1955burger_detail_main.png" alt="1955버거 메인이미지">
+            <form action="cart.html">
+                <div>
+                    <div>
+                        <h3>판매가</h3>
+                        <h4>5,800원</h4>
+                    </div>
+                    <div class="delivery-Amt">
+                        <h3>배달비</h3>
+                        <h4>3,000원<span>(30,000원 이상 구매 시 무료)</span></h4>
+                    </div>
+                    <div>
+                        <h3>세트선택</h3>
+                        <h4>
+                            <input type="radio" id="single" name="Choice">
+                            <label for="single">단품</label>
+                            <input type="radio" id="set" name="Choice">
+                            <label for="set">세트</label>
+                        </h4>
+                    </div>
+                    <div>
+                        <h3>사이드</h3>
+                        <h4>
+                            <select name="side" id="side">
+                                <option selected disabled value="">옵션을 선택해주세요</option>
+                                <option value="">콜라</option>
+                                <option value="">사이다</option>
+                                <option value="">환타</option>
+                                <option value="">감자튀김</option>
+                            </select>
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <h3>1955버거 -단품</h3>
+                    <h4>5,800원</h4>
+                </div>
+                <div>
+                    <h3>총상품 금액(수량)</h3>
+                    <h4>5,800원(1개)</h4>
+                </div>
+                <div>
+                    <button class="btn add_to_cart">장바구니</button>
+                    <button type="submit" class="btn">구매하기</button>
+                </div>
+            </form>
+        </section>
+        <div class="detail-info">
+            <ul>
+                <li class="active"><a href="">상세정보</a>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi id ratione minima, voluptatibus perferendis temporibus odit voluptatem harum molestias doloremque porro consectetur quaerat, itaque officia necessitatibus repellat debitis beatae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi id ratione minima, voluptatibus perferendis temporibus odit voluptatem harum molestias doloremque porro consectetur quaerat, itaque officia necessitatibus repellat debitis beatae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi id ratione minima, voluptatibus perferendis temporibus odit voluptatem harum molestias doloremque porro consectetur quaerat, itaque officia necessitatibus repellat debitis beatae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi id ratione minima, voluptatibus perferendis temporibus odit voluptatem harum molestias doloremque porro consectetur quaerat, itaque officia necessitatibus repellat debitis beatae.
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">구매안내</a>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius suscipit minus deleniti odio, quaerat atque, quae, nostrum voluptatem blanditiis esse error. Atque, exercitationem recusandae sint iste perferendis delectus minima ipsum.
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">상품후기</a>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius suscipit minus deleniti odio, quaerat atque, quae, nostrum voluptatem blanditiis esse error. Atque, exercitationem recusandae sint iste perferendis delectus minima ipsum.
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Q&A</a>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius suscipit minus deleniti odio, quaerat atque, quae, nostrum voluptatem blanditiis esse error. Atque, exercitationem recusandae sint iste perferendis delectus minima ipsum.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div>
+            <a href="index.html"><i class="xi-home"></i></a>          
+            <p><a href="">홈</a></p>
+        </div>
+        <div class="menu-btn">
+            <a href=""><i class="xi-bars"></i></a>
+            <p><a href="">메뉴</a></p>
+        </div>
+        <div>
+            <a href=""><i class="xi-bicycle"></i></a>
+            <p><a href="">주문조회</a></p>
+        </div>
+        <div>
+            <a href=""><i class="xi-user-o"></i></a>
+            <p><a href="">마이페이지</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

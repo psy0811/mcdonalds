@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>맥도날드</title>
+
+    <!-- open graph -->
+    <meta property="og:title" content="맥도날드(portfolio)"/>   
+    <meta property="og:type" content="mobile site"/>   
+    <meta property="og:url" content="http://sy0811.dothome.co.kr/mcdonalds/">   
+    <meta property="og:image" content="mobile/images/thum.jpg">   
+    <meta property="og:description" content="mcdonalds mobile site renewal">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2/xeicon.min.css">
+    <style>
+        body{
+            background: #ccc;
+            height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            width: 100%;
+            height: 5%;
+            background-color: #333;
+            border-radius: 20px 20px 0 0;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5px;
+            padding: 5px 10px 0;
+            box-sizing: border-box;
+        }
+        #clock{
+            font-size: 14px;
+            padding-left: 5px;
+        }
+        .right{
+            display: flex;
+        }
+        .right i:nth-child(3){
+            padding-left: 3px;
+            vertical-align: sub;
+            line-height: 18px;
+        }
+        .mcdonalds{
+            width: 400px;
+            height: 750px;
+            background:#222;
+            border-radius:30px;
+            padding:15px 15px 15px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .mcdonalds iframe{
+            width:100%;
+            height: 95%;
+            border:none;
+            background: #fff;
+            border-radius:0 0 20px 20px;
+        }
+        .mcdonalds:before{
+            content:'';
+            position: absolute;
+            width: 250px;
+            height:35px;
+            background: #222;
+            border-radius: 0 0 20px 20px;
+            left:50%;
+            transform:translateX(-50%);
+            top:0px;
+        }
+        .mcdonalds::after{
+            content:'';
+            position: absolute;
+            width: 50px;
+            height:8px;
+            background: #000;
+            border-radius: 20px;
+            left:50%;
+            transform:translateX(-50%);
+            top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mcdonalds">
+        <header>
+            <div id="clock">00:00</div>
+            <div class="right">                
+                <i class="xi-signal-3"></i> 
+                <i class="xi-wifi"></i> 
+                <i class="xi-battery-70"></i> 
+            </div>
+        </header>
+        <iframe src="mobile/index.html" frameborder="0"></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="modernizr-custom.js"></script>
+    <script>
+        if (Modernizr.touchevents) {
+            location.href = './mobile/index.html'
+            console.log(location.href);
+        } else {
+            console.log('pc');
+        }    
+
+
+        //시간
+        var clockTarget = document.getElementById("clock");
+        function clock() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            clockTarget.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }`;
+        }
+        function init() {
+        clock();
+
+        setInterval(clock, 1000);
+        }
+        init();
+    </script>
+</body>
+</html>
